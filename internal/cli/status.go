@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/cli/server/proto"
+	"github.com/StevenBarnett1/bor/internal/cli/server/proto"
 	"github.com/golang/protobuf/ptypes/empty"
 )
 

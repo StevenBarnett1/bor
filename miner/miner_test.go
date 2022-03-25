@@ -21,17 +21,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/StevenBarnett1/bor/common"
+	"github.com/StevenBarnett1/bor/consensus/clique"
+	"github.com/StevenBarnett1/bor/core"
+	"github.com/StevenBarnett1/bor/core/rawdb"
+	"github.com/StevenBarnett1/bor/core/state"
+	"github.com/StevenBarnett1/bor/core/types"
+	"github.com/StevenBarnett1/bor/core/vm"
+	"github.com/StevenBarnett1/bor/eth/downloader"
+	"github.com/StevenBarnett1/bor/ethdb/memorydb"
+	"github.com/StevenBarnett1/bor/event"
+	"github.com/StevenBarnett1/bor/trie"
 )
 
 type mockBackend struct {

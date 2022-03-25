@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/StevenBarnett1/bor/common"
 )
 
 // Validator represets Volatile state for each Validator

@@ -19,8 +19,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/StevenBarnett1/bor/cmd/utils"
+	"github.com/StevenBarnett1/bor/common"
 	"gopkg.in/urfave/cli.v1"
 )
 

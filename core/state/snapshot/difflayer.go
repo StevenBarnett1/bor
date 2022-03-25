@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/StevenBarnett1/bor/common"
+	"github.com/StevenBarnett1/bor/rlp"
 	bloomfilter "github.com/holiman/bloomfilter/v2"
 )
 

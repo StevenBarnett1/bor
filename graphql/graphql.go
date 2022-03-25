@@ -24,15 +24,15 @@ import (
 	"math/big"
 	"strconv"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/filters"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/StevenBarnett1/bor"
+	"github.com/StevenBarnett1/bor/common"
+	"github.com/StevenBarnett1/bor/common/hexutil"
+	"github.com/StevenBarnett1/bor/common/math"
+	"github.com/StevenBarnett1/bor/core/state"
+	"github.com/StevenBarnett1/bor/core/types"
+	"github.com/StevenBarnett1/bor/eth/filters"
+	"github.com/StevenBarnett1/bor/internal/ethapi"
+	"github.com/StevenBarnett1/bor/rpc"
 )
 
 var (

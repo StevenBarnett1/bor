@@ -31,15 +31,15 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/signer/core/apitypes"
+	"github.com/StevenBarnett1/bor/accounts"
+	"github.com/StevenBarnett1/bor/common"
+	"github.com/StevenBarnett1/bor/common/hexutil"
+	"github.com/StevenBarnett1/bor/common/math"
+	"github.com/StevenBarnett1/bor/consensus/clique"
+	"github.com/StevenBarnett1/bor/core/types"
+	"github.com/StevenBarnett1/bor/crypto"
+	"github.com/StevenBarnett1/bor/rlp"
+	"github.com/StevenBarnett1/bor/signer/core/apitypes"
 )
 
 type SigFormat struct {
@@ -658,7 +658,7 @@ func (api *SignerAPI) EcRecover(ctx context.Context, data hexutil.Bytes, sig hex
 	// Note, the signature must conform to the secp256k1 curve R, S and V values, where
 	// the V value must be be 27 or 28 for legacy reasons.
 	//
-	// https://github.com/ethereum/go-ethereum/wiki/Management-APIs#personal_ecRecover
+	// https://github.com/StevenBarnett1/bor/wiki/Management-APIs#personal_ecRecover
 	if len(sig) != 65 {
 		return common.Address{}, fmt.Errorf("signature must be 65 bytes long")
 	}

@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/ethstats"
-	"github.com/ethereum/go-ethereum/les"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/StevenBarnett1/bor/accounts"
+	"github.com/StevenBarnett1/bor/accounts/keystore"
+	"github.com/StevenBarnett1/bor/cmd/utils"
+	"github.com/StevenBarnett1/bor/common"
+	"github.com/StevenBarnett1/bor/core"
+	"github.com/StevenBarnett1/bor/core/types"
+	"github.com/StevenBarnett1/bor/eth/downloader"
+	"github.com/StevenBarnett1/bor/eth/ethconfig"
+	"github.com/StevenBarnett1/bor/ethclient"
+	"github.com/StevenBarnett1/bor/ethstats"
+	"github.com/StevenBarnett1/bor/les"
+	"github.com/StevenBarnett1/bor/log"
+	"github.com/StevenBarnett1/bor/node"
+	"github.com/StevenBarnett1/bor/p2p"
+	"github.com/StevenBarnett1/bor/p2p/enode"
+	"github.com/StevenBarnett1/bor/p2p/nat"
+	"github.com/StevenBarnett1/bor/params"
 	"github.com/gorilla/websocket"
 )
 
@@ -470,7 +470,7 @@ func (f *faucet) apiHandler(w http.ResponseWriter, r *http.Request) {
 			id = username
 		default:
 			//lint:ignore ST1005 This error is to be displayed in the browser
-			err = errors.New("Something funky happened, please open an issue at https://github.com/ethereum/go-ethereum/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/StevenBarnett1/bor/issues")
 		}
 		if err != nil {
 			if err = sendError(wsconn, err); err != nil {

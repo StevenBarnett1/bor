@@ -16,8 +16,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ethereum/go-ethereum/internal/cli/flagset"
-	"github.com/ethereum/go-ethereum/internal/cli/server/proto"
+	"github.com/StevenBarnett1/bor/internal/cli/flagset"
+	"github.com/StevenBarnett1/bor/internal/cli/server/proto"
 	"github.com/golang/protobuf/jsonpb"
 	gproto "github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/empty"

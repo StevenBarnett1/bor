@@ -20,15 +20,15 @@ import (
 	"encoding/binary"
 	"encoding/json"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/StevenBarnett1/bor/common"
+	"github.com/StevenBarnett1/bor/core"
+	"github.com/StevenBarnett1/bor/core/state"
+	"github.com/StevenBarnett1/bor/core/types"
+	"github.com/StevenBarnett1/bor/light"
+	"github.com/StevenBarnett1/bor/log"
+	"github.com/StevenBarnett1/bor/metrics"
+	"github.com/StevenBarnett1/bor/rlp"
+	"github.com/StevenBarnett1/bor/trie"
 )
 
 // serverBackend defines the backend functions needed for serving LES requests

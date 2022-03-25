@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/StevenBarnett1/bor/params"
 )
 
 // VerifyGaslimit verifies the header gas limit according increase/decrease

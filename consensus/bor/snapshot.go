@@ -6,11 +6,11 @@ import (
 
 	lru "github.com/hashicorp/golang-lru"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/StevenBarnett1/bor/common"
+	"github.com/StevenBarnett1/bor/core/types"
+	"github.com/StevenBarnett1/bor/ethdb"
+	"github.com/StevenBarnett1/bor/internal/ethapi"
+	"github.com/StevenBarnett1/bor/params"
 )
 
 // Snapshot is the state of the authorization voting at a given point in time.

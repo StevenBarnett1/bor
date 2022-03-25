@@ -6,7 +6,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/StevenBarnett1/bor/log"
 	"github.com/mitchellh/cli"
 )
 

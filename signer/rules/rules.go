@@ -23,11 +23,11 @@ import (
 	"strings"
 
 	"github.com/dop251/goja"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/internal/jsre/deps"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/signer/core"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/StevenBarnett1/bor/internal/ethapi"
+	"github.com/StevenBarnett1/bor/internal/jsre/deps"
+	"github.com/StevenBarnett1/bor/log"
+	"github.com/StevenBarnett1/bor/signer/core"
+	"github.com/StevenBarnett1/bor/signer/storage"
 )
 
 var (

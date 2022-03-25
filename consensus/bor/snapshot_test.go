@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/StevenBarnett1/bor/common"
 )
 
 const (

@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/internal/cli/flagset"
-	"github.com/ethereum/go-ethereum/internal/cli/server/proto"
+	"github.com/StevenBarnett1/bor/core"
+	"github.com/StevenBarnett1/bor/internal/cli/flagset"
+	"github.com/StevenBarnett1/bor/internal/cli/server/proto"
 )
 
 // ChainWatchCommand is the command to group the peers commands

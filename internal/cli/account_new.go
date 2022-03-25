@@ -3,7 +3,7 @@ package cli
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/internal/cli/flagset"
+	"github.com/StevenBarnett1/bor/internal/cli/flagset"
 )
 
 type AccountNewCommand struct {

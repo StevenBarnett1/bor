@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/cli/flagset"
-	"github.com/ethereum/go-ethereum/internal/cli/server/proto"
+	"github.com/StevenBarnett1/bor/internal/cli/flagset"
+	"github.com/StevenBarnett1/bor/internal/cli/server/proto"
 )
 
 // PeersListCommand is the command to group the peers commands

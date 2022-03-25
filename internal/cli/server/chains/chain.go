@@ -1,8 +1,8 @@
 package chains
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
+	"github.com/StevenBarnett1/bor/common"
+	"github.com/StevenBarnett1/bor/core"
 )
 
 type Chain struct {

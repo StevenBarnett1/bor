@@ -3,8 +3,8 @@ package cli
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/internal/cli/flagset"
+	"github.com/StevenBarnett1/bor/accounts"
+	"github.com/StevenBarnett1/bor/internal/cli/flagset"
 )
 
 type AccountListCommand struct {
