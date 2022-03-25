@@ -35,7 +35,7 @@ func GetDerivedBorTxHash(receiptKey []byte) common.Hash {
 
 // NewBorTransaction create new bor transaction for bor receipt
 func NewBorTransaction() *Transaction {
-	return NewTransaction(0, common.Address{}, big.NewInt(0), 0, big.NewInt(0), make([]byte, 0))
+	return NewTransaction(0, 137,common.Address{}, big.NewInt(0), 0, big.NewInt(0), make([]byte, 0))
 }
 
 // DeriveFieldsForBorReceipt fills the receipts with their computed fields based on consensus
