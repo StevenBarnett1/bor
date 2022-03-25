@@ -1,4 +1,4 @@
-module github.com/ethereum/go-ethereum
+module github.com/StevenBarnett1/bor
 
 go 1.16
 
