@@ -27,14 +27,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/StevenBarnett1/bor"
-	"github.com/StevenBarnett1/bor/accounts/abi"
-	"github.com/StevenBarnett1/bor/accounts/abi/bind"
-	"github.com/StevenBarnett1/bor/common"
-	"github.com/StevenBarnett1/bor/core"
-	"github.com/StevenBarnett1/bor/core/types"
-	"github.com/StevenBarnett1/bor/crypto"
-	"github.com/StevenBarnett1/bor/params"
+	"github.com/ethereum/go-ethereum"
+	"github.com/ethereum/go-ethereum/accounts/abi"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/core"
+	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/ethereum/go-ethereum/params"
 )
 
 func TestSimulatedBackend(t *testing.T) {
@@ -186,7 +186,7 @@ func TestNewAdjustTimeFail(t *testing.T) {
 		t.Errorf("adjusted time not equal to a minute. prev: %v, new: %v", prevTime, newTime)
 	}
 	// Put a transaction after adjusting time
-	tx2 := types.NewTransaction(1, ,137,testAddr, big.NewInt(1000), params.TxGas, gasPrice, nil)
+	tx2 := types.NewTransaction(1, testAddr, big.NewInt(1000), params.TxGas, gasPrice, nil)
 	signedTx2, err := types.SignTx(tx2, types.HomesteadSigner{}, testKey)
 	if err != nil {
 		t.Errorf("could not sign tx: %v", err)
@@ -292,7 +292,7 @@ func TestNonceAt(t *testing.T) {
 	head, _ := sim.HeaderByNumber(context.Background(), nil) // Should be child's, good enough
 	gasPrice := new(big.Int).Add(head.BaseFee, big.NewInt(1))
 
-	tx := types.NewLegacyTransaction(nonce, 137,testAddr, big.NewInt(1000), params.TxGas, gasPrice, nil)
+	tx := types.NewTransaction(nonce, testAddr, big.NewInt(1000), params.TxGas, gasPrice, nil)
 	signedTx, err := types.SignTx(tx, types.HomesteadSigner{}, testKey)
 	if err != nil {
 		t.Errorf("could not sign tx: %v", err)

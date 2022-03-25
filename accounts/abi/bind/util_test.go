@@ -113,7 +113,7 @@ func TestWaitDeployedCornerCases(t *testing.T) {
 
 	// Create a transaction to an account.
 	code := "6060604052600a8060106000396000f360606040526008565b00"
-	tx := types.NewLegacyTransaction(0, 137,common.HexToAddress("0x01"), big.NewInt(0), 3000000, gasPrice, common.FromHex(code))
+	tx := types.NewTransaction(0, 137,common.HexToAddress("0x01"), big.NewInt(0), 3000000, gasPrice, common.FromHex(code))
 	tx, _ = types.SignTx(tx, types.HomesteadSigner{}, testKey)
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()

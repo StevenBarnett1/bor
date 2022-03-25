@@ -36,11 +36,10 @@ type LegacyTx struct {
 
 // NewTransaction creates an unsigned legacy transaction.
 // Deprecated: use NewTx instead.
-func NewTransaction(nonce uint64, ChainID uint64, to common.Address, amount *big.Int, gasLimit uint64, gasPrice *big.Int, data []byte) *Transaction {
+func NewTransaction(nonce uint64, to common.Address, amount *big.Int, gasLimit uint64, gasPrice *big.Int, data []byte) *Transaction {
 	return NewTx(&LegacyTx{
 		Nonce:    nonce,
 		To:       &to,
-		ChainID: ChainID,
 		Value:    amount,
 		Gas:      gasLimit,
 		GasPrice: gasPrice,
@@ -78,7 +77,7 @@ func (tx *LegacyTx) copy() TxData {
 		To:    copyAddressPtr(tx.To),
 		Data:  common.CopyBytes(tx.Data),
 		Gas:   tx.Gas,
-		ChainID: tx.ChainID,
+		ChainID: ChainID
 		// These are initialized below.
 		Value:    new(big.Int),
 		GasPrice: new(big.Int),
