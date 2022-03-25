@@ -48,6 +48,17 @@ func NewTransaction(nonce uint64, ChainID uint64, to common.Address, amount *big
 	})
 }
 
+func NewLegacyTransaction(nonce uint64, ChainID uint64, to common.Address, amount *big.Int, gasLimit uint64, gasPrice *big.Int, data []byte) *Transaction {
+	return NewTx(&LegacyTx{
+		Nonce:    nonce,
+		To:       &to,
+		ChainID: ChainID,
+		Value:    amount,
+		Gas:      gasLimit,
+		GasPrice: gasPrice,
+		Data:     data,
+	})
+}
 // NewContractCreation creates an unsigned legacy transaction.
 // Deprecated: use NewTx instead.
 func NewContractCreation(nonce uint64, amount *big.Int, gasLimit uint64, gasPrice *big.Int, data []byte) *Transaction {
