@@ -78,6 +78,7 @@ func (tx *LegacyTx) copy() TxData {
 		To:    copyAddressPtr(tx.To),
 		Data:  common.CopyBytes(tx.Data),
 		Gas:   tx.Gas,
+		ChainID: tx.ChainID,
 		// These are initialized below.
 		Value:    new(big.Int),
 		GasPrice: new(big.Int),
