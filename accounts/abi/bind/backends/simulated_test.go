@@ -292,7 +292,7 @@ func TestNonceAt(t *testing.T) {
 	head, _ := sim.HeaderByNumber(context.Background(), nil) // Should be child's, good enough
 	gasPrice := new(big.Int).Add(head.BaseFee, big.NewInt(1))
 
-	tx := types.NewTransaction(nonce, 137,testAddr, big.NewInt(1000), params.TxGas, gasPrice, nil)
+	tx := types.NewLegacyTransaction(nonce, 137,testAddr, big.NewInt(1000), params.TxGas, gasPrice, nil)
 	signedTx, err := types.SignTx(tx, types.HomesteadSigner{}, testKey)
 	if err != nil {
 		t.Errorf("could not sign tx: %v", err)
